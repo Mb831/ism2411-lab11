@@ -1,3 +1,14 @@
+# Reflection 1
+# I would use .get() when I'm not sure if a key exists because it
+# prevents an error. I would use brackets when I know the key
+# should be there. My rule is to use .get() when a key might be missing.
+
+# Reflection 2
+# This reminds me of PivotTables in Excel because both can group
+# data and calculate totals. Python is better for large datasets
+# because it can process a lot of information automatically.
+
+
 # Exercise 1 - One Customer
 
 customer = {
