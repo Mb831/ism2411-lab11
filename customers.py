@@ -85,3 +85,21 @@ catalog = {
 for product, details in catalog.items():
     if details["stock"] < 20:
         print(f"LOW STOCK: {product} - {details['stock']} left")
+
+# Exercise 8 - Sales by Region
+
+transactions = [
+    {"region": "South", "amount": 300},
+    {"region": "North", "amount": 150},
+    {"region": "South", "amount": 200}
+]
+
+sales_summary = {}
+
+for transaction in transactions:
+    region = transaction["region"]
+    amount = transaction["amount"]
+    sales_summary[region] = sales_summary.get(region, 0) + amount
+
+for region in sorted(sales_summary):
+    print(f"{region}: ${sales_summary[region]}")
